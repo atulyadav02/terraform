@@ -12,9 +12,9 @@ phases:
     commands:
       - apt-get update
       - npm install
-      - apt-get install zip
+      - apt-get install -y unzip
       - wget https://releases.hashicorp.com/terraform/0.10.4/terraform_0.10.4_linux_amd64.zip
-      - unzip terraform_0.10.4_linux_amd64.zip -y
+      - unzip -y terraform_0.10.4_linux_amd64.zip
       - mv terraform /bin
       - rm terraform_0.10.4_linux_amd64.zip
       - apt-get update
