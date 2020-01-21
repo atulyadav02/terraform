@@ -7,6 +7,9 @@ version: 0.2
 
 phases:
   install:
+      runtime-versions:
+      golang: 1.13
+      nodejs: 10
     commands:
       - apt-get update
       - npm install
